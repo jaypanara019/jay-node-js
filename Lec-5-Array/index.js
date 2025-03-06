@@ -9,22 +9,22 @@ app.set("views",path.join(__dirname,"views"));
 app.get("/",(req,res)=>{
     let studentArr = [
         {
-            name : "Ashish",
-            email : "ashish@gmail.com",
+            name : "jay",
+            email : "jay@gmail.com",
             age : 18,
-            phone : 9595959595,
+            phone : 956474411,
         },
         {
-            name : "asdf",
-            email : "ashish@gmail.com",
+            name : "rahul",
+            email : "rahul@gmail.com",
             age : 19,
-            phone : 9595959595,
+            phone : 955585855,
         },
         {
-            name : "fda",
-            email : "ashish@gmail.com",
+            name : "pawar",
+            email : "pawar@gmail.com",
             age : 20,
-            phone : 9595959595,
+            phone : 5824962147,
         },
     ]
     return res.render("index",{
