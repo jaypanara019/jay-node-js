@@ -15,6 +15,7 @@ app.use(express.urlencoded());
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
+console.log(__dirname)
 
 app.get('/',async (req,res)=>{
     return res.render('home',{allTask});
@@ -42,6 +43,7 @@ app.get('/completeTask/:id',async(req,res)=>{
     });
     return res.redirect('/main');
 });
+
 app.get('/update', async (req, res) => {
     return res.render('edit', { allTask });
 });
